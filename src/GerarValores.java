@@ -2,11 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GerarValores {
+    private final List<ValoresDoJogo> opcoesDeValores = new ArrayList<>();
+    private ValoresDoJogo frutaSorteada;
+    private int indexAleatorio;
 
     public  ValoresDoJogo gerarValorAleatorioNivel1() {
-        List<ValoresDoJogo> opcoesDeValores = new ArrayList<>();
-        var indexAleatorio =(int) (Math.random()*3);
-        ValoresDoJogo frutaSorteada;
+        indexAleatorio =(int) (Math.random()*3);
 
         opcoesDeValores.add(ValoresDoJogo.BANANA);
         opcoesDeValores.add(ValoresDoJogo.MORANGO);
@@ -17,9 +18,7 @@ public class GerarValores {
     }
 
     public  ValoresDoJogo gerarValorAleatorioNivel2() {
-        List<ValoresDoJogo> opcoesDeValores = new ArrayList<>();
-        var indexAleatorio =(int) (Math.random()*5);
-        ValoresDoJogo frutaSorteada;
+        indexAleatorio =(int) (Math.random()*5);
 
         opcoesDeValores.add(ValoresDoJogo.ESTRELA);
         opcoesDeValores.add(ValoresDoJogo.CARRINHO);
@@ -32,9 +31,7 @@ public class GerarValores {
     }
 
     public  ValoresDoJogo gerarValorAleatorioNivel3() {
-        List<ValoresDoJogo> opcoesDeValores = new ArrayList<>();
-        var indexAleatorio =(int) (Math.random()*7);
-        ValoresDoJogo frutaSorteada;
+        indexAleatorio =(int) (Math.random()*7);
 
         opcoesDeValores.add(ValoresDoJogo.BANANA);
         opcoesDeValores.add(ValoresDoJogo.MORANGO);
