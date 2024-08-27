@@ -25,7 +25,7 @@ public enum ValoresDoJogo {
 
     @Override
     public String toString() {
-        return "Fruta Sorteada: "+ nome +
-                "\nPontos da fruta: " + pontos + "\n";
+        return "Valor Sorteado: "+ nome +
+                "\nPontos que você ganhou: " + pontos + "\n";
     }
 }
