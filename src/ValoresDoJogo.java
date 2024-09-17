@@ -7,6 +7,7 @@ public enum ValoresDoJogo {
     PIZZA(60, "Pizza"),
     FOGUETE(70, "Foguete");
 
+
     private final int pontos;
     private final String nome;
 
@@ -25,7 +26,7 @@ public enum ValoresDoJogo {
 
     @Override
     public String toString() {
-        return "Valor Sorteado: "+ nome +
-                "\nPontos que você ganhou: " + pontos + "\n";
+        return nome + ": pontuação-> "+pontos;
     }
+
 }
